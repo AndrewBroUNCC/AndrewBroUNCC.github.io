@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="md:overflow-hidden overflow-visible">
+<body class="sm:overflow-auto xl:overflow-hidden">
   <!-- max-w max width sm ? lg xl 2xl 3xl etc. 
     hover:blur to blur on hover. blur-0 to remove blur
     bg-color background
@@ -13,7 +13,7 @@
     rounded-size card round
     the container of text must be flex and then in the container user justify center and items center.
   -->
-  <div class="flex flex-col bg-[url('/img/portBackground.jpg')] h-fit">
+  <div class="flex flex-col bg-[url('/img/portBackground.jpg')] bg-cover bg-no-repeat min-h-screen">
     <div class="mt-20 text-center justify-center items-center  rounded-t-xl hover:blur cursor-default tracking-wider blur-0">
       <h1 class="text-6xl font-bold italic text-white">
         Hi, im Andrew Brown
@@ -27,18 +27,18 @@
         <div class=" grid row-span-1 grid-cols-3">
           <div class="ml-8 my-auto content rounded-xl ml-auto">
             <!--image of me-->
-            <img class=" mx-auto rounded-xl" src="/img/andrew_brown_300x399.jpg" alt="">
+            <img class="border mx-auto rounded-xl" src="/img/andrew_brown_300x399.jpg" alt="">
           </div>
-          <div class="text-4xl pt-10 space-y-8 font-bold col-span-2 my-5 mx-5">
-            <h1 class="transition-all hover:animate-bounce bg-green-300 rounded-xl mx-2 pl-4">Software Engineer</h1>
-            <h1 class="transition-all hover:animate-bounce bg-green-500 rounded-xl mx-2 pl-4">Front End Developer</h1>
-            <h1 class="transition-all hover:animate-bounce bg-green-700 rounded-xl mx-2 pl-4">Mobile App Maker</h1>
+          <div class=" sm:w-[80%] md:w-auto text-4xl pt-10 space-y-8 font-bold col-span-2 my-5 mx-5">
+            <h1 class="py-2 hover:text-green-300 hover:bg-black border bg-green-300 rounded-xl mx-2 pl-4">Software Engineer</h1>
+            <h1 class="py-2 hover:text-green-300 hover:bg-black border hover:animate-pulse bg-green-500 rounded-xl mx-2 pl-4">Front End Developer</h1>
+            <h1 class="py-2 hover:text-green-300 hover:bg-black border hover:animate-pulse bg-green-700 rounded-xl mx-2 pl-4">Mobile App Maker</h1>
           </div>
         </div>
-        <div class=" text-white space-x-10 text-center justify-center flex flex-row text-3xl italic mt-5 h-2/5 p-10 row-span-1 rounded-xl mx-5">
-          <p class="pr-2 hover:underline">My Projects</p> &rarr;
-          <p class="pr-2 hover:underline">About Me</p> &rarr;
-          <p class="pr-2 hover:underline">Contact Me</p> &rarr;
+        <div class=" text-white space-x-10 text-center justify-center flex flex-row text-3xl italic mt-5 h-fit p-10 row-span-1 rounded-xl mx-5">
+          <p class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:text-indigo-500 duration-300 pr-2 font-bold">My Projects &rarr;</p> 
+          <p class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:text-indigo-500 duration-300 pr-2 font-bold">About Me &rarr;</p> 
+          <p class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:text-indigo-500 duration-300 pr-2 font-bold">Contact Me &rarr;</p>
         </div>
       </div>
     </div>
