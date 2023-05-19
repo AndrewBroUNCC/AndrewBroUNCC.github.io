@@ -5,21 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline text-red">
-    Hello world!
-  </h1>
-
-  <div class="p-6 max-w-sm mx-auto bg-red rounded-xl shadow-lg flex items-center space-x-4">
-    <div class="shrink-0">
-      <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo">
+<body class="md:overflow-hidden overflow-visible">
+  <!-- max-w max width sm ? lg xl 2xl 3xl etc. 
+    hover:blur to blur on hover. blur-0 to remove blur
+    bg-color background
+    cursor-pointer on hover swaps cursor to a pointer finger
+    rounded-size card round
+    the container of text must be flex and then in the container user justify center and items center.
+  -->
+  <div class="flex flex-col bg-[url('/img/portBackground.jpg')] h-fit">
+    <div class="mt-20 text-center justify-center items-center  rounded-t-xl hover:blur cursor-default tracking-wider blur-0">
+      <h1 class="text-6xl font-bold italic text-white">
+        Hi, im Andrew Brown
+      </h1>
+      <h1 class="text-xl font-bold italic text-white">
+        Nice to meet you
+      </h1>
     </div>
-    <div>
-      <div class="text-xl font-medium text-black">ChitChat</div>
-      <p class="text-slate-500">You have a new message!</p>
+    <div class=" h-fit">
+      <div class=" grid grid-rows-2">
+        <div class=" grid row-span-1 grid-cols-3">
+          <div class="ml-8 my-auto content rounded-xl ml-auto">
+            <!--image of me-->
+            <img class=" mx-auto rounded-xl" src="/img/andrew_brown_300x399.jpg" alt="">
+          </div>
+          <div class="text-4xl pt-10 space-y-8 font-bold col-span-2 my-5 mx-5">
+            <h1 class="transition-all hover:animate-bounce bg-green-300 rounded-xl mx-2 pl-4">Software Engineer</h1>
+            <h1 class="transition-all hover:animate-bounce bg-green-500 rounded-xl mx-2 pl-4">Front End Deveolper</h1>
+            <h1 class="transition-all hover:animate-bounce bg-green-700 rounded-xl mx-2 pl-4">Mobile App Maker</h1>
+          </div>
+        </div>
+        <div class=" text-white space-x-10 text-center justify-center flex flex-row text-3xl italic mt-5 h-2/5 p-10 row-span-1 rounded-xl mx-5">
+          <p class="pr-2 hover:underline">My Projects</p> &rarr;
+          <p class="pr-2 hover:underline">About Me</p> &rarr;
+          <p class="pr-2 hover:underline">Contact Me</p> &rarr;
+        </div>
+      </div>
     </div>
   </div>
-
-  
 </body>
 </html>
