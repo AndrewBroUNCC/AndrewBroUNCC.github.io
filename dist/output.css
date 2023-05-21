@@ -631,6 +631,10 @@ video {
   margin-left: 4rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -961,6 +965,10 @@ video {
 @media (min-width: 640px) {
   .sm\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .sm\:mt-20 {
+    margin-top: 5rem;
   }
 
   .sm\:flex {
