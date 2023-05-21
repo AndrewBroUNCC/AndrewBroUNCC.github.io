@@ -858,6 +858,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1036,6 +1040,10 @@ video {
 
   .sm\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .sm\:pt-20 {
+    padding-top: 5rem;
   }
 
   .sm\:text-6xl {
